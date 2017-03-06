@@ -1,6 +1,9 @@
 <h1>Projects</h1>
-<% @projects.each do |project| %>
-  <%= project["name"] %>
-  <%= project["description"] %>
-  <%= link_to 'Project', project["html_url"], { target: :_blank } %>
-<% end %>
+<div class="container">
+  <% @projects.each do |project| %>
+  <%= project["name"] %><br>
+  <%= project["description"] %><br>
+  <%= project["language"] %><br>
+  <%= link_to 'Project', project["html_url"], { target: :_blank } %><hr>
+  <% end %>
+</div>
