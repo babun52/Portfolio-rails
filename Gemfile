@@ -36,7 +36,6 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'rest-client'
-gem 'dotenv-rails', :groups => [:development, :test]
 gem 'devise'
 
 group :development, :test do
@@ -46,6 +45,10 @@ group :development, :test do
   gem 'launchy'
   gem 'pry'
   gem 'shoulda-matchers'
+  gem 'dotenv-rails'
+  gem 'capybara'
+  gem 'factory_girl_rails'
+  gem 'simplecov', require: false
 end
 
 group :development do
